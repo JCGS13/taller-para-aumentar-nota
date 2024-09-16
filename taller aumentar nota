@@ -1,0 +1,162 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNR8UxGXVL2CTWNM+DvV4bh",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/JCGS13/taller-para-aumentar-nota/blob/main/taller%20aumentar%20nota\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "###PROBLEMA DEL CINE\n",
+        "\n",
+        "**nombre**: JOHENDRY CESAR GARCIA SILVA\n",
+        "\n",
+        "**email**: johendry.garcia@upb.edu.co\n",
+        "\n",
+        "*FECHA DE CREACION*: 16 DE SEPTIENMRE 2024"
+      ],
+      "metadata": {
+        "id": "NcyP5Am_HV1P"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "algoritmo para funcion del cine\n",
+        "\n",
+        "1. iniciar\n",
+        "2. obtener el numero de niños que entrara en la funcion\n",
+        "3. obtener el numero de adulto que entrara a la funcion\n",
+        "4. obtener la hora de funcion (0-24)\n",
+        "5. obtener el total dependiendo de la hora de funcion:\n",
+        "- si la hora es menor a 18, entonces: total = num_niños * 5000 + num_adultos * 7500\n",
+        "- si la hora es mayor a 18, entonves total = (num_niños + num_adultos) * 10000\n",
+        "6. mostrar total\n",
+        "7. si el total es mayor o igual a 50000, indicar que se han ganado una crispeta gratis\n",
+        "8. finalizar."
+      ],
+      "metadata": {
+        "id": "zuETNQvxHVmH"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "pseudocodigo\n",
+        "//programa para calcular el valor de entradas de un cine//\n",
+        "\n",
+        "declare float num_niños\n",
+        "\n",
+        "declare float num_adultos\n",
+        "\n",
+        "declare float hora\n",
+        "\n",
+        "declare float total\n",
+        "\n",
+        "display \"ingrese el numero de niños\"\n",
+        "\n",
+        "input num_niños\n",
+        "\n",
+        "display \"ingrese el numero de adultos\"\n",
+        "\n",
+        "input num_adultos\n",
+        "\n",
+        "display \"hora en la que ingrsa la funcion\"\n",
+        "\n",
+        "input hora\n",
+        "\n",
+        "//determina el total el total a para dependiendo de la funcion//\n",
+        "\n",
+        "if hora < 18\n",
+        "\n",
+        "then total = num_niños * 5000 + num_adultos * 7500\n",
+        "\n",
+        "else hora > 18\n",
+        "\n",
+        "then total = (num_niños + num_adultos) * 10000\n",
+        "\n",
+        "display (este es su total a pagar) , total\n",
+        "\n",
+        "if total > 50000\n",
+        "\n",
+        "then display \"ha ganado una crispeta gratis\"\n",
+        "\n",
+        "else display \"no ha ganado nada\""
+      ],
+      "metadata": {
+        "id": "elm4bxTkIyZK"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num_niños = float(input(\"ingrese el numero de niños\"))\n",
+        "num_adultos = float(input(\"ingrese el numero de adultos\"))\n",
+        "hora = float(input(\"hora en la que ingresa la funcion\"))\n",
+        "\n",
+        "if hora < 18:\n",
+        "  total = num_niños * 5000 + num_adultos * 7500\n",
+        "else:\n",
+        " total = (num_niños + num_adultos) * 10000\n",
+        "print(\"este es su total a pagar\", total)\n",
+        "\n",
+        "if total > 50000:\n",
+        "  print(\"ha ganado una crispeta gratis\")\n",
+        "else:\n",
+        "  print(\"no ha ganado nada\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5Q13_SGgI4qO",
+        "outputId": "8726fc7c-54b5-45a3-ea2b-3dfc807948b1"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ingrese el numero de niños3\n",
+            "ingrese el numero de adultos2\n",
+            "hora en la que ingresa la funcion16\n",
+            "este es su total a pagar 30000.0\n",
+            "no ha ganado nada\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "hHNNDeUlHUYA"
+      },
+      "outputs": [],
+      "source": []
+    }
+  ]
+}
